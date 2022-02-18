@@ -1,0 +1,39 @@
+---
+my_app1:
+  dev:
+    database:
+      type: postgres
+      size: 1x1xCPU-2GB-25GB
+      region: fi-hel1
+    compute:
+      region: fi-hel1
+      size: 1xCPU-1GB
+      count: 1
+  prod:
+    database:
+      type: postgres
+      size: 2x2xCPU-4GB-100GB
+      region: fi-hel1
+    compute:
+      region: fi-hel1
+      size: 1xCPU-1GB
+      count: 2
+my_app2:
+  dev:
+    database:
+      type: mysql
+      size: 1x1xCPU-2GB-25GB
+      region: fi-hel1
+    compute:
+      region: fi-hel1
+      size: 1xCPU-1GB
+      count: 1
+  prod:
+    database:
+      type: mysql
+      size: 2x2xCPU-4GB-100GB
+      region: fi-hel1
+    compute:
+      region: fi-hel1
+      size: 1xCPU-1GB
+      count: 2
