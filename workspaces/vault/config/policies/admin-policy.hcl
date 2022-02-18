@@ -52,12 +52,12 @@ path "transit/*"
   capabilities = ["create", "read", "update", "delete", "list", "sudo"]
 }
 
-# Manage SSH secrets engine mounted at ssh-client-signer
+# Manage SSH secrets engine mounted at path ssh-client-signer/
 path "ssh-client-signer/*" {
   capabilities = ["create", "read", "update", "delete", "list"]
 }
 
-# Manage database secrets engine at postgres
+# Manage database secrets engine at path postgres/
 path "postgres/*" {
   capabilities = ["create", "read", "update", "delete", "list"]
 }
