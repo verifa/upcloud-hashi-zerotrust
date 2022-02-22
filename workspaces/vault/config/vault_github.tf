@@ -1,6 +1,7 @@
+
 resource "vault_github_auth_backend" "upcloud" {
   organization = "upcloudltd"
-  path = "github_upcloud"
+  path         = "github_upcloud"
 }
 
 resource "vault_github_user" "upcloud_vtorhonen" {
@@ -17,7 +18,7 @@ resource "vault_github_user" "upcloud_isarpila" {
 
 resource "vault_github_auth_backend" "verifa" {
   organization = "verifa"
-  path = "github_verifa"
+  path         = "github_verifa"
 }
 
 resource "vault_github_user" "verifa_jlarfors" {
