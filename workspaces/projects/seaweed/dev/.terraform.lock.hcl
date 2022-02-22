@@ -2,9 +2,10 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/vault" {
-  version = "3.3.0"
+  version     = "3.3.0"
+  constraints = "~> 3.3.0"
   hashes = [
-    "h1:o2ov9xF3LwRY5lDaGfakdalLxxDm5frK7+cMvZqf+BI=",
+    "h1:D0NKPyIqlGrMm9LMCV2T70PnqwU3+A0swxTZHCvvRt4=",
     "zh:0fcda21e49cbc93da392e022a8cf647452fcc91e3934a4d1ad8c6d744a75af57",
     "zh:16c46da47e73486cc71881b0ec39a12e8d8f182eae42c386ad8d3f95de623c34",
     "zh:33e7586cdcdd262372f2e52514eb27ec106bcdcdf2662fc1e6da03e5a5e82bba",
@@ -23,7 +24,7 @@ provider "registry.terraform.io/upcloudltd/upcloud" {
   version     = "2.2.0"
   constraints = "~> 2.2.0"
   hashes = [
-    "h1:kaPUvJ5Cw8X+BGHvKO0s2BhSErU/bao2AK6B2J377kk=",
+    "h1:d9iabXFoenKBO9DQg/8R9jINdxkOc1JAI/nq9mY6g1k=",
     "zh:0125b78125763fbb4077412d76bd79de237bf3f011560b01c0b6216ef84ba816",
     "zh:1beaf33c0fca95226d7443758a184320f8f96ecc48a57efd8f3708d2c2de1f09",
     "zh:57a1cf2cb5974c2d5c57c7ca4e2e21129406c4682964d81e2349a5f06cb2c480",

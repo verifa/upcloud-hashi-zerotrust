@@ -9,6 +9,22 @@ locals {
       working_directory = "workspaces/bootstrap"
       tags              = ["bootstrap"]
     }
+    project-seaweed-prod = {
+      working_directory = "workspaces/projects/seaweed/prod"
+      tags              = ["project-seaweed", "env=prod"]
+    }
+    project-seaweed-dev = {
+      working_directory = "workspaces/projects/seaweed/dev"
+      tags              = ["project-seaweed", "env=dev"]
+    }
+    vault-config = {
+      working_directory = "workspaces/vault/config"
+      tags              = ["vault", "config"]
+    }
+    vault-infra = {
+      working_directory = "workspaces/vault/infra"
+      tags              = ["vault", "infra"]
+    }
   }
 }
 
