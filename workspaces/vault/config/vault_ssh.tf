@@ -20,6 +20,6 @@ resource "vault_ssh_secret_backend_role" "upcloud_server" {
   ttl                     = "3600"
   max_ttl                 = "86400"
   allowed_extensions      = "permit-pty,permit-port-forwarding"
-  default_extensions      = { "permit-pty" : "" } #allows you to get a terminal, nice type...
-  algorithm_signer        = "rsa-sha2-512"        #needed for OpenSSH > 8.2
+  default_extensions      = { "permit-pty" : "" } # Allows you to get a terminal, nice type...
+  algorithm_signer        = "rsa-sha2-512"        # Needed for OpenSSH > 8.2
 }

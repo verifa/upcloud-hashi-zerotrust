@@ -6,6 +6,7 @@ provider "registry.terraform.io/hashicorp/hcp" {
   constraints = "~> 0.22"
   hashes = [
     "h1:IqUL2PAuoHrSlx4Q7ScKw/ejqgo0tA1NuuSgHsl/LCE=",
+    "h1:e4fu0Hk6z9hZZy3AMcT4FoV+u42PiiowAhGPNhQrNig=",
     "zh:10ad9c203a7dabefef3ac8270d46c14e7817b946d0ac85b1640ecd4a91253bce",
     "zh:15381f53098fdda335981d2641514503c5e91874bf24ee59e576c590cd6044cd",
     "zh:311dfc0cb1da566c51a1f8254413e985357a2b4bc180ba99e53f1c37d94c64e9",
@@ -21,19 +22,20 @@ provider "registry.terraform.io/hashicorp/hcp" {
 }
 
 provider "registry.terraform.io/hashicorp/vault" {
-  version = "3.2.1"
+  version     = "3.3.0"
+  constraints = "~> 3.3.0"
   hashes = [
-    "h1:Y4SD633648cQm6VN8x9kOPSXQrdEJGsNwdfWlv7UaNg=",
-    "zh:0fcef2460da2fd0e1452603edf0a994fdd99b9373dd9312af3415b96151437d1",
-    "zh:37920773305a1366a79b31a7be0ceeca81a807ee1eef37402e27b48b967c9827",
-    "zh:5f43a4f7934ba50b1a2f383529efa764709af6e7ad1b8bc45afe8faf6b977afe",
-    "zh:6ddc4e1cc02208a774e1ccdd0d2df0bedac53864c89aa7a64c557132255ecd65",
-    "zh:7378a896193b9fcd3c2461c34a521f95dcd6a18d909214aeef923d39775dd4a3",
-    "zh:8cf05ab85d8cc8556a970c2e8e539d99ce580e0f17fee1876ff359da8a2e5685",
-    "zh:a031748c28dbadc3d40b0c57275a4b1b1be1933ad5d93b60c9b868c48f5432b7",
-    "zh:a9c03dc147a5a18a30ad3ac011f4abafc64388c1ee802d8249783ffe935e350d",
-    "zh:af1c1d49c83ae00a44c14cf2b69473aaf0c1258258c5c65655774ac1c940ffde",
-    "zh:afb1cac21b1fc3263b0d0d216b14ada486578d6803d1ee732e04d9e7b96c2cb6",
-    "zh:f461e2501174f8bd73644d7a6a0c0aee619fc957d549880cc0416ae786658bcd",
+    "h1:D0NKPyIqlGrMm9LMCV2T70PnqwU3+A0swxTZHCvvRt4=",
+    "zh:0fcda21e49cbc93da392e022a8cf647452fcc91e3934a4d1ad8c6d744a75af57",
+    "zh:16c46da47e73486cc71881b0ec39a12e8d8f182eae42c386ad8d3f95de623c34",
+    "zh:33e7586cdcdd262372f2e52514eb27ec106bcdcdf2662fc1e6da03e5a5e82bba",
+    "zh:461ec17cafcaeb62fb56cb75edc8331118b28fb1212d99b710a36f6ecdda7539",
+    "zh:60a80cd2481f2ddd0c4bdc2b03753579dd2693ca1e1f8160bbb80c6d2590098e",
+    "zh:77a32c5cc988f06652d5a03a6b6c6f5693656b35c179d3b0e4b662d7691a3033",
+    "zh:8901aadc6e72432f320027e26e487d0e2c14426a4e07f7201f277519505cc4e9",
+    "zh:99bc6872c39b08b720240ed9c53c58a388e3886412c0cc2f67dbd623468e319f",
+    "zh:9da866bb960727d2cd59d6c1a9eee096593d7a9af782c56ec62bfaacb6ce05ab",
+    "zh:e0e0840662d710a9b012baec22ae37520c9c438e9efafddb1aff33b559f15ecd",
+    "zh:eedcd92e35003c81fb6fa66d66b5b7c4a24278fce3d181f4b9eaf07125f16b9f",
   ]
 }

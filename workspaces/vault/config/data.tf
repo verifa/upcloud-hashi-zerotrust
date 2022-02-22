@@ -9,3 +9,7 @@ data "terraform_remote_state" "vault_infra" {
     }
   }
 }
+
+data "vault_generic_secret" "tfc" {
+  path = "secrets/tfc/jlarfors"
+}
