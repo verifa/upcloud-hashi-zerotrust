@@ -40,8 +40,8 @@ path "sys/mounts"
   capabilities = ["read", "list"]
 }
 
-# List, create, update, and delete key/value secrets at secret/
-path "secret/*"
+# List, create, update, and delete key/value secrets at secrets/
+path "secrets/*"
 {
   capabilities = ["create", "read", "update", "delete", "list", "sudo"]
 }
