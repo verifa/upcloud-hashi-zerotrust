@@ -1,13 +1,10 @@
 
-terraform {
-  required_providers {
-    tfe = {
-      source  = "hashicorp/tfe"
-      version = "~> 0.28.1"
-    }
-  }
+provider "tfe" {
+  token = vault_generic_secret.tfc.data.token
 }
 
-provider "tfe" {
-  # Set TFE_TOKEN environment variable
+provider "vault" {
+  address   = var.vault_address
+  token     = hcp_vault_cluster_admin_token.zerotrust_vault_admin_token.token
+  namespace = var.vault_admin_namespace
 }
