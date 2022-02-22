@@ -46,6 +46,12 @@ path "secrets/*"
   capabilities = ["create", "read", "update", "delete", "list", "sudo"]
 }
 
+# List, create, update, and delete key/value secrets at tfc/
+path "tfc/*"
+{
+  capabilities = ["create", "read", "update", "delete", "list", "sudo"]
+}
+
 # Manage transit secrets engine
 path "transit/*"
 {
