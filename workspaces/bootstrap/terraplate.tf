@@ -6,3 +6,11 @@ variable "vault_admin_namespace" {
   default = "admin"
 }
 
+variable "workspace_name" {
+  default = "bootstrap"
+}
+
+variable "workspace_prefix" {
+  default = "ucvzt"
+}
+

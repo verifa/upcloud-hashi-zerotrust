@@ -15,3 +15,4 @@ resource "vault_terraform_cloud_secret_role" "this" {
   max_ttl      = 1200 # Seconds
   ttl          = 600  # Seconds
 }
+

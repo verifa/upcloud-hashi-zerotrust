@@ -40,6 +40,16 @@ path "sys/mounts"
   capabilities = ["read", "list"]
 }
 
+# Namespaces
+path "sys/namespaces/*" {
+  capabilities = ["create", "read", "update", "delete", "list"]
+}
+
+# List sys/namespaces
+path "sys/namespaces/" {
+  capabilities = ["list"]
+}
+
 # List, create, update, and delete key/value secrets at secrets/
 path "secrets/*"
 {
