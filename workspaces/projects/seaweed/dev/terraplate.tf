@@ -1,4 +1,6 @@
 terraform {
+  required_version = ">= 1.1.0"
+
   required_providers {
     upcloud = {
       source  = "UpCloudLtd/upcloud"
@@ -12,7 +14,7 @@ terraform {
 }
 
 variable "environment" {
-  default = "prod"
+  default = "env"
 }
 
 variable "project" {
@@ -25,5 +27,21 @@ variable "vault_address" {
 
 variable "vault_admin_namespace" {
   default = "admin"
+}
+
+variable "vault_approle_role_id" {
+  default = ""
+}
+
+variable "vault_approle_secret_id" {
+  default = ""
+}
+
+variable "workspace_name" {
+  default = "project-seaweed-dev"
+}
+
+variable "workspace_prefix" {
+  default = "ucvzt"
 }
 

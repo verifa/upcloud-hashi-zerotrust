@@ -1,5 +1,7 @@
 
 terraform {
+  required_version = ">= 1.1.0"
+
   required_providers {
     upcloud = {
       source  = "UpCloudLtd/upcloud"
@@ -10,4 +12,10 @@ terraform {
       version = "~> 3.3.0"
     }
   }
+}
+
+variables {
+  # TFC should override these
+  vault_approle_role_id   = ""
+  vault_approle_secret_id = ""
 }

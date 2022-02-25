@@ -22,6 +22,7 @@ resource "tfe_workspace" "this" {
   name           = "${local.workspace_prefix}-${each.key}"
   organization   = "verifa-io"
   execution_mode = "remote"
+  auto_apply     = true
   tag_names      = concat(local.workspace_tags, each.value.tags)
 
   working_directory = each.value.working_directory

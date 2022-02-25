@@ -1,4 +1,0 @@
-
-variables {
-  environment = "prod"
-}
