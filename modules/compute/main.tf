@@ -1,4 +1,8 @@
 
+data "vault_generic_secret" "ssh_trusted_ca" {
+  path = "ssh-client-signer/config/ca"
+}
+
 # 
 # Create UpCloud server
 # 
@@ -17,5 +21,5 @@ resource "upcloud_server" "this" {
     type = "public"
   }
 
-  user_data = templatefile("${path.module}/user_data/user_data.tftpl", { ssh_trusted_ca = "TODO" })
+  user_data = templatefile("${path.module}/user_data/user_data.tftpl", { ssh_trusted_ca = data.vault_generic_secret.ssh_trusted_ca.data.public_key })
 }

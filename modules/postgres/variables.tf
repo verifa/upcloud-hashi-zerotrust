@@ -25,5 +25,5 @@ variable "db" {
 variable "vault_mount_path" {
   type        = string
   description = "Path to where the database secrets engine is mounted in Vault."
-  default     = "database"
+  default     = "postgres"
 }
