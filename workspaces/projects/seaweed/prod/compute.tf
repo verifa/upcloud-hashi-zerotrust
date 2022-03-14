@@ -7,6 +7,12 @@ locals {
       region    = "fi-hel1"
       plan      = "1xCPU-1GB"
     }
+    app-x = {
+      image     = "01000000-0000-4000-8000-000030200200"
+      disk_size = 25
+      region    = "fi-hel1"
+      plan      = "1xCPU-1GB"
+    }
   }
 }
 
