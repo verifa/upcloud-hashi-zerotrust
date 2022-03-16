@@ -29,6 +29,6 @@ resource "vault_github_user" "verifa_jlarfors" {
 
 resource "vault_github_user" "upcloud_mike" {
   backend  = vault_github_auth_backend.verifa.path
-  user     = "mike-vainio-verifa"
+  user     = "mvainio-verifa"
   policies = [vault_policy.admin.name]
 }
