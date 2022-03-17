@@ -10,6 +10,14 @@ locals {
         ip_filter     = ["0.0.0.0/0"]
       }
     }
+    app-x = {
+      plan = "1x1xCPU-2GB-25GB"
+      zone = "fi-hel1"
+      properties = {
+        public_access = true
+        ip_filter     = ["0.0.0.0/0"]
+      }
+    }
   }
 }
 
